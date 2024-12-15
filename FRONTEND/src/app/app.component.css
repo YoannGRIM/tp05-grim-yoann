@@ -1,0 +1,77 @@
+html {
+  height: auto;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #007b5e;
+  padding: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+nav a.active {
+  text-decoration: underline;
+}
+
+/* General Layout */
+.layout {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+/* Slim Sidebar Styles */
+.sidebar {
+  width: 120px; /* Reduced width for a slimmer appearance */
+  background-color: #2980B9;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  padding: 10px;
+  box-shadow: 2px 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%; /* Ensure links stretch across the sidebar width */
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  display: block;
+  padding: 10px;
+  text-align: center; /* Center text for slim design */
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar a:hover {
+  background-color: #3498DB; /* Hover effect */
+}
+
+.sidebar a.active {
+  background-color: #1ABC9C; /* Active link background */
+}
+
+/* Main Content Styles */
+.content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}

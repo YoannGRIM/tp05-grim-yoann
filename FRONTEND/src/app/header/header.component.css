@@ -1,0 +1,18 @@
+/* Header container */
+header {
+  background-color: #2C3E50; /* Modern green color for the header background */
+  color: white; /* White text for good contrast */
+  padding: 15px 20px;
+  text-align: center; /* Center-align the text */
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border-bottom: 2px solid #000000; /* Add a slight accent at the bottom */
+}
+
+/* Paragraph styling */
+header p {
+  margin: 0; /* Remove default margins */
+  padding: 0; /* Ensure tight layout */
+  font-size: 18px; /* Slightly larger text for readability */
+}

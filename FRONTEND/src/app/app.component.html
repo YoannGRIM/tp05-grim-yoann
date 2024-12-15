@@ -1,0 +1,19 @@
+<app-header></app-header>
+<div class="layout">
+  <!-- Sidebar Navigation -->
+  <nav class="sidebar">
+    <ul>
+      <li>
+        <a routerLink="/catalog" routerLinkActive="active">Catalog</a>
+      </li>
+      <li>
+        <a routerLink="/basket" routerLinkActive="active">Basket</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="content">
+    <router-outlet></router-outlet>
+  </main>
+</div>

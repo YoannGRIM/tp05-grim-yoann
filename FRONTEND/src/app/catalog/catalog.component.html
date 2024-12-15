@@ -1,0 +1,28 @@
+<div>
+  <h2>Catalogue</h2>
+</div>
+
+<hr />
+
+<div>
+  <h2>Add a product to the basket</h2>
+  <form [formGroup]="productForm" (ngSubmit)="addToBasket()">
+    <div>
+      <label for="name">Name :</label>
+      <input id="name" formControlName="name" />
+      <div *ngIf="productForm.get('name')?.invalid && productForm.get('name')?.touched">
+        The name is required.
+      </div>
+    </div>
+
+    <div>
+      <label for="price">Price :</label>
+      <input id="price" type="number" formControlName="price" />
+      <div *ngIf="productForm.get('price')?.invalid && productForm.get('price')?.touched">
+        The price is required.
+      </div>
+    </div>
+
+    <button type="submit" [disabled]="productForm.invalid">Add to basket</button>
+  </form>
+</div>
